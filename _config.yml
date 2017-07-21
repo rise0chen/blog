@@ -109,5 +109,5 @@ stylus:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/rise0chen/rise0chen.github.io.git
-  branch: master
+  repository: git@git.oschina.net:rise0chen/rise0chen.git
+  branch: blog
