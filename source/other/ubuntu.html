@@ -1,0 +1,37 @@
+源：<select name="sour" onchange="rep_sour(this.value)">
+<option value="http://mirrors.aliyun.com/ubuntu/">aliyun源</option>
+<option value="http://mirrors.163.com/ubuntu/">163源</option>
+</select>&nbsp;&nbsp;&nbsp;&nbsp;
+版本：<select name="ver" onchange="rep_ver(this.value)">
+<option value="precise">12.04(precise)</option>
+<option value="raring">13.04(raring)</option>
+</select>
+<br/>
+<code>
+deb <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>precise</ver> main restricted universe multiverse<br/>
+deb <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>precise</ver>-security main restricted universe multiverse<br/>
+deb <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>precise</ver>-updates main restricted universe multiverse<br/>
+deb <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>precise</ver>-proposed main restricted universe multiverse<br/>
+deb <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>precise</ver>-backports main restricted universe multiverse<br/>
+deb-src <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>precise</ver> main restricted universe multiverse<br/>
+deb-src <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>precise</ver>-security main restricted universe multiverse<br/>
+deb-src <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>precise</ver>-updates main restricted universe multiverse<br/>
+deb-src <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>precise</ver>-proposed main restricted universe multiverse<br/>
+deb-src <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>precise</ver>-backports main restricted universe multiverse<br/>
+</code>
+
+<script>
+function rep_sour(what)
+{
+	var s=document.getElementsByTagName("sour");
+	for(i=0;i<s.length;i++)
+		s[i].innerHTML=what;
+}
+function rep_ver(what)
+{
+	var v=document.getElementsByTagName("ver");
+	for(i=0;i<v.length;i++)
+		v[i].innerHTML=what;
+}
+</script>
+
