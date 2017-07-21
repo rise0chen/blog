@@ -4,24 +4,11 @@ if theme.baidu_share
 
 if theme.JiaThis_share
   script.
-      var jiathis_config={
-          data_track_clickback:true,
-          summary:"",
-          shortUrl:true,
-          hideMore:false
-      }
-  script(type="text/javascript",src="http://v3.jiathis.com/code/jia.js",charset="utf-8")
-
-if theme.comment.duoshuo
-  script.
-    var duoshuoQuery = {short_name:'#{theme.comment.duoshuo}'};
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        document.getElementsByTagName('body')[0].appendChild(ds);
-    })();
+    var jiathis_config={
+      data_track_clickback:'true',
+      hideMore:false
+    }
+  script(type="text/javascript",src="http://v3.jiathis.com/code/jia.js?uid="+theme.comment.uyan,charset="utf-8")
 
 if theme.comment.disqus
   script.
@@ -50,16 +37,6 @@ if theme.comment.livere
 
 if theme.comment.uyan
   script(src='http://v2.uyan.cc/code/uyan.js?uid='+theme.comment.uyan)
-
-if theme.comment.cloudTie
-  script.
-    var cloudTieConfig = {
-      url: document.location.href, 
-      sourceId: "",
-      productKey: '#{theme.comment.cloudTie}',
-      target: "cloud-tie-wrapper"
-    };
-  script(src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js")
 
 if theme.comment.changyan.appid && theme.comment.changyan.appkey
   script.

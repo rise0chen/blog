@@ -59,6 +59,9 @@ html(lang='#{config.language}')
               != partial('_widget/' + item + '.jade')
         else
           .layout-r.hidden_mid_and_down: #sidebar
+            if theme.local_search == true
+              .search-pla
+              block tocmodel
             each item in theme.widgets
               != partial('_widget/' + item + '.jade')
       a#totop(href='#top')

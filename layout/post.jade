@@ -7,9 +7,6 @@ block content
   .post
     h1.post-title= page.title
     .post-meta
-      if theme.comment
-        include _partial/comment_count
-        +comment-count(page.path)
       p
         span.date= page.date.format(theme.date_formats.post)
         if page.categories.length > 0
@@ -21,6 +18,9 @@ block content
             i#busuanzi_container_page_pv
               i#busuanzi_value_page_pv
               i= '' + __('hits')
+        if theme.comment
+          include _partial/comment_count
+          +comment-count(page.path)
     .post-content
       != page.content
     include _partial/tag
