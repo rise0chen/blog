@@ -6,16 +6,16 @@
 title: 云腾
 subtitle: 让互联网插上飞翔的翅膀
 description: 让互联网插上飞翔的翅膀
-keywords: 云腾,crise,Rise Chen,rise0chen
+keywords: 云腾,crise,rise0chen
 author: rise0chn
 language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://crise.cn
+url: http://blog.crise.cn/
 root: /
-permalink: :category/:title.html
+permalink: :category/:id.html
 permalink_defaults:
 
 # Directory
@@ -57,13 +57,13 @@ index_generator:
 # Category & Tag
 default_category: quote
 category_map:
-  个人语录 : quote #0
   社会实践 : exercise #1
   比赛经历 : match #2
+  个人语录 : quote #3
   
   网站开发 : website #7
-  微控制器 : mcu #8
-  Linux笔记 : linux #9
+  电子技术 : elec #8
+  操作系统 : linux #9
 tag_map:
 
 # Date / Time format
@@ -105,9 +105,14 @@ jsonContent:
 stylus:
   compress: true
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repository: git@git.oschina.net:rise0chen/rise0chen.git
-  branch: blog
+  type: qiniu
+  bucket: rise
+  accessKey: HvefOdbwfQuBLO9wutsO5URZU_rtQR1KRxgnwDf9
+  secretKey: 7413wzUot5vn3D-TTZVAhZwTjPicavl49tfFszfB
+
+sync:
+  username: username
+  password: 123456
+
+
