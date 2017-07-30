@@ -26,7 +26,7 @@ widgets:
   - category
   - tag
   #- archive
-  - weibo
+  #- weibo
   - links
 
 # Toc
@@ -64,7 +64,7 @@ local_search: true ## Use a javascript-based local search engine, true/false.
 comment:
   disqus: ## disqus_shortname
   livere: ## 来必力(data-uid)
-  uyan: 2139479## 友言(uid)
+  uyan: 2139479 ## 友言(uid)
   changyan: ## 畅言需在下方配置两个参数，此处不填。
     appid: ## 畅言(appid)
     appkey: ##畅言(appkey)
@@ -77,11 +77,12 @@ addToAny_share: # AddToAny share. Empty list hides. List items are service name 
 # Analytics
 google_analytics: ## Your Google Analytics tracking id, e.g. UA-42025684-2
 baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 1006843030519956000
+umeng_analytics: 1263161803 ## Your Umeng Analytics tracking id, e.g. 1263161802
 
 # Miscellaneous
 show_category_count: true ## If you want to show the count of categories in the sidebar widget please set the value to true.
 widgets_on_small_screens: true ## Set to true to enable widgets on small screens.
-busuanzi: true ##访问量计数http://busuanzi.ibruce.info/
+busuanzi: false ##访问量计数http://busuanzi.ibruce.info/
 
 # Links widget. Empty links will hide widget.
 links:
