@@ -1,8 +1,10 @@
 blog: Blog
 albums: Albums
 categories: Categories
+plugins: Plugins
 tags: Tags
 archive: Archive
+weibo: Sina Weibo
 links: Links
 about: About
 recent: Recent

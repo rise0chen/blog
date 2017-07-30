@@ -14,8 +14,11 @@ menu:
     directory: archives/
     icon: fa-archive
   - page: about
-    directory: about/index.html
+    directory: about/about.html
     icon: fa-user
+  - page: plugins
+    directory: about/hexo.html
+    icon: fa-hexo
 
 # Sidebar
 widgets:
