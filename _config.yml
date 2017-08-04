@@ -82,7 +82,16 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: BlueLake
-  
+
+# Extensions
+Plugins:
+  #hexo-generator-feed
+  #hexo-generator-sitemap
+  #hexo-generator-baidu-sitemap
+feed: false
+sitemap: false
+baidusitemap: false
+
 jsonContent:
   meta: false
   pages: false
@@ -112,7 +121,6 @@ deploy:
   secretKey: 7413wzUot5vn3D-TTZVAhZwTjPicavl49tfFszfB
 
 sync:
-  username: username
-  password: 123456
-
+  username: rise0chen
+  password: 5703d575762ff0284c7af3c729bf3799
 
