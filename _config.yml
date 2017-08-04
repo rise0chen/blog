@@ -10,9 +10,6 @@ menu:
   - page: home
     directory: .
     icon: fa-home
-  - page: archive
-    directory: archives/
-    icon: fa-archive
   - page: about
     directory: about/about.html
     icon: fa-user
@@ -44,18 +41,6 @@ date_formats:
   category: "YYYY/MM/DD"
   post: "YYYY年MM月DD日"
   tag: "YYYY/MM/DD"
-
-# Extensions
-Plugins:
-  #SEO
-  #hexo-generator-feed
-  #hexo-generator-sitemap
-  #hexo-generator-baidu-sitemap
-
-#Feed Atom
-feed: false
-sitemap: false
-baidusitemap: false
 
 #Local search
 local_search: true ## Use a javascript-based local search engine, true/false.
