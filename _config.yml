@@ -19,7 +19,7 @@ menu:
 
 # Sidebar
 widgets:
-  #- recent_posts #最新文章
+  - notify
   - category
   - tag
   #- archive
@@ -69,7 +69,10 @@ show_category_count: true ## If you want to show the count of categories in the 
 widgets_on_small_screens: true ## Set to true to enable widgets on small screens.
 busuanzi: false ##访问量计数http://busuanzi.ibruce.info/
 
-# Links widget. Empty links will hide widget.
+notify:
+  - title: 1、欢迎来到云腾博客。
+    url: 
+
 links:
   - title: 云腾网
     url: http://www.crise.cn/

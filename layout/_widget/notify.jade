@@ -1,0 +1,10 @@
+if theme.notify && theme.notify.length > 0
+  .widget
+    .widget-title
+      i(class='fa fa-notify')= ' ' + __('notify')
+    - for (var i in theme.notify)
+      ul
+        if theme.notify[i].url
+          a(href='#{theme.notify[i].url}') #{theme.notify[i].title}
+        else
+          a() #{theme.notify[i].title}
