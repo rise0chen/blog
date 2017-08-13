@@ -15,7 +15,7 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://blog.crise.cn/
 root: /
-permalink: categories/:category/:id.html
+permalink: categories/:title.html
 permalink_defaults:
 
 # Directory

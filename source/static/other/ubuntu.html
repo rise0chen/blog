@@ -1,34 +1,40 @@
-源：<select name="sour" onchange="rep_sour(this.value)">
-<option value="http://mirrors.aliyun.com/ubuntu/">阿里源</option>
-<option value="http://mirrors.aliyuncs.com/ubuntu/">阿里源(阿里云服务器版)</option>
-<option value="http://mirrors.163.com/ubuntu/">163源</option>
-<option value="http://mirrors.sohu.com/ubuntu/">搜狐源</option>
-<option value="http://mirrors.ustc.edu.cn/ubuntu/">中科大源</option>
-<option value="http://mirrors.tuna.tsinghua.edu.cn/ubuntu/">清华源</option>
-<option value="http://ftp.sjtu.edu.cn/ubuntu/">上交大源</option>
-<option value="http://archive.ubuntu.com/ubuntu/">官方源</option>
+<div>
+<span style="display: inline-block;">
+<label>源：</label>
+<select name="sour" onchange="rep_sour(this.value)">
+  <option value="http://mirrors.aliyun.com/ubuntu/" selected>阿里源</option>
+  <option value="http://mirrors.aliyuncs.com/ubuntu/">阿里源(阿里云服务器版)</option>
+  <option value="http://mirrors.163.com/ubuntu/">163源</option>
+  <option value="http://mirrors.sohu.com/ubuntu/">搜狐源</option>
+  <option value="http://mirrors.ustc.edu.cn/ubuntu/">中科大源</option>
+  <option value="http://mirrors.tuna.tsinghua.edu.cn/ubuntu/">清华源</option>
+  <option value="http://ftp.sjtu.edu.cn/ubuntu/">上交大源</option>
+  <option value="http://archive.ubuntu.com/ubuntu/">官方源</option>
 </select>&nbsp;&nbsp;&nbsp;&nbsp;
-版本：<select name="ver" onchange="rep_ver(this.value)">
-<!--<option value selected>选择版本号</option>-->
-<optgroup label="推荐">
-<option value="xenial">16.04(xenial)</option>
-<option value="trusty">14.04(trusty)</option>
-<option value="precise">12.04(precise)</option>
-</optgroup>
-<optgroup label="一般">
-<option value="zesty">17.04(zesty)</option>
-<option value="yakkety">16.10(yakkety)</option>
-<option value="willy">15.10(willy)</option>
-<option value="vivid">15.04(vivid)</option>
-</optgroup>
-<optgroup label="禁用">
-<option value="utopic">14.10(utopic)</option>
-<option value="saucy">13.10(saucy)</option>
-<option value="raring">13.04(raring)</option>
-<option value="quantal">12.10(quantal)</option>
-</optgroup>
+</span>
+<span style="display: inline-block;">
+<label>版本：</label>
+<select name="ver" onchange="rep_ver(this.value)">
+  <optgroup label="推荐">
+    <option value="xenial" selected>16.04(xenial)</option>
+    <option value="trusty">14.04(trusty)</option>
+    <option value="precise">12.04(precise)</option>
+  </optgroup>
+  <optgroup label="一般">
+    <option value="zesty">17.04(zesty)</option>
+    <option value="yakkety">16.10(yakkety)</option>
+    <option value="willy">15.10(willy)</option>
+    <option value="vivid">15.04(vivid)</option>
+  </optgroup>
+  <optgroup label="禁用">
+    <option value="utopic">14.10(utopic)</option>
+    <option value="saucy">13.10(saucy)</option>
+    <option value="raring">13.04(raring)</option>
+    <option value="quantal">12.10(quantal)</option>
+  </optgroup>
 </select>
-<br/>
+</span>
+</div>
 <code>
 deb <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>xenial</ver> main restricted universe multiverse<br/>
 deb <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>xenial</ver>-security main restricted universe multiverse<br/>
