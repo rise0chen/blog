@@ -115,12 +115,12 @@ stylus:
   compress: true
 
 deploy:
-  type: qiniu
+  type: qiniucloud
   bucket: rise
   accessKey: HvefOdbwfQuBLO9wutsO5URZU_rtQR1KRxgnwDf9
   secretKey: 7413wzUot5vn3D-TTZVAhZwTjPicavl49tfFszfB
 
 sync:
-  username: rise0chen
-  password: 5703d575762ff0284c7af3c729bf3799
+  uname: rise0chen
+  secret: cc9606d27e113022
 
