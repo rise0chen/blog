@@ -49,14 +49,12 @@ local_search: true ## Use a javascript-based local search engine, true/false.
 comment:
   disqus: ## disqus_shortname
   livere: ## 来必力(data-uid)
-  uyan: 2139479 ## 友言(uid)
   changyan: ## 畅言需在下方配置两个参数，此处不填。
-    appid: ## 畅言(appid)
-    appkey: ##畅言(appkey)
+    appid: cytGciV2d ## 畅言(appid)
+    appkey: 3a4e594fd4d0210ddd7489c703cc8f7f ##畅言(appkey)
 
 #Share
 baidu_share: false ##百度分享
-JiaThis_share: true ##JiaThis分享
 addToAny_share: # AddToAny share. Empty list hides. List items are service name at url. For ex: email for '<a href="https://www.addtoany.com/add_to/email?linkurl=...'
 
 # Analytics
@@ -71,7 +69,7 @@ busuanzi: false ##访问量计数http://busuanzi.ibruce.info/
 
 notify:
   - title: 1、欢迎来到云腾博客。
-    url: 
+    url:
 
 links:
   - title: 云腾网

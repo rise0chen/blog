@@ -4,10 +4,6 @@ mixin comment-count(path)
       if theme.comment.disqus
         i.disqus-comment-count(data-disqus-identifier=path)
         = ''+ __('guestbook')
-      if theme.comment.uyan
-        object
-          a#uyan_count_unit
-          = ''+ __('guestbook')
       if theme.comment.changyan.appid && theme.comment.changyan.appkey
         i#changyan_count_unit(data-xid=path)
         = ''+ __('guestbook') + ','

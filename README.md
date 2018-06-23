@@ -104,19 +104,14 @@ local_search: true ## Use a javascript-based local search engine, true/false.
 
 #Cmments
 comment:
-  duoshuo: #chaooo ## duoshuo_shortname
   disqus: ## disqus_shortname
   livere: ## 来必力(data-uid)
-  uyan: ## 友言(uid)
-  cloudTie: ## 网易云跟帖(productKey)
   changyan: ## 畅言需在下方配置两个参数，此处不填。
     appid: ## 畅言(appid)
     appkey: ##畅言(appkey)
 
 #Share
 baidu_share: true ## 百度分享
-JiaThis_share: ##true ##JiaThis分享
-duoshuo_share: #true ##true 多说分享必须和多说评论一起使用。
 
 # Analytics
 google_analytics: ## Your Google Analytics tracking id, e.g. UA-42025684-2
@@ -165,11 +160,8 @@ links:
 - **Local search**
 - self_search - 默认本地JS搜索.
 - **Cmments**
-- duoshuo - 若使用[多说评论](http://duoshuo.com)，注册多说后在这填写short_name(用于评论与分享)。
 - disqus - 若使用[Disqus评论](https://disqus.com)，注册Disqus后在这填写short_name。
 - livere- 若使用[来必力评论](https://livere.com)，注册来必力,获得data-uid。
-- uyan - 若使用[友言评论](http://www.uyan.cc/)，注册友言,获得uid。
-- cloudTie - 若使用[网易云跟帖评论](https://gentie.163.com/info.html)，注册网易云跟帖,获得productKey。
 - changyan - 若使用[畅言评论](http://changyan.kuaizhan.com)，注册畅言，获得appid，appkey。
 - **About page** - 关于我页面(hexo new page 'about')。
 - **links** - 友情链接。
