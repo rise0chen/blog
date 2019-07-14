@@ -1,4 +1,4 @@
 [submodule "themes/BlueLake"]
 	path = themes/BlueLake
-	url = https://gitee.com/rise0chen/rise0chen.git
+	url = https://github.com/rise0chen/rise0chen.git
 	branch = theme
