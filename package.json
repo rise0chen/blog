@@ -5,7 +5,8 @@
   "scripts": {
     "start": "hexo server",
     "build": "hexo generate",
-    "deploy": "hexo deploy"
+    "deploy": "now --prod",
+    "deploy:hexo": "hexo deploy"
   },
   "dependencies": {
     "hexo": "^3.9.0",
@@ -15,7 +16,7 @@
     "hexo-generator-json-content": "^2.2.0",
     "hexo-generator-tag": "^0.2.0",
     "hexo-renderer-jade": "^0.3.0",
-    "hexo-renderer-marked": "^0.3.2",
+    "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.2.2",
     "hexo-sync": "^1.0.0"
