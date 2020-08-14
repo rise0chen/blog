@@ -21,7 +21,7 @@ menu:
 widgets:
   - notify
   - category
-  - tag
+  #- tag
   #- archive
   #- weibo
   - links
