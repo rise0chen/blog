@@ -15,12 +15,12 @@ Linux 将物理内存分为内存段的部分被称作“页面”。交换是�
 
 ```bash
 # 新建 swap 文件
-dd if=/dev/zero of=/mnt/swap bs=1M count=1024
-chmod 0644 /mnt/swap
+sudo dd if=/dev/zero of=/mnt/swap bs=1M count=2048
+sudo chmod 0600 /mnt/swap
 # 把swap文件做成 swap 分区
-mkswap /mnt/swap
+sudo mkswap /mnt/swap
 # 启用交换分区的交换功能
-swapon /mnt/swap
+sudo swapon /mnt/swap
 # 查看启用的 swap 分区
 swapon -s
 # 查看 swappiness
