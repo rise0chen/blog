@@ -1,26 +1,35 @@
-<div>
-  <span style="display: inline-block">
+<div style="display: flex;">
+  <span style="display: inline-block; display: flex; margin: 8px">
     <label>源：</label>
     <select name="sour" onchange="rep_sour(this.value)">
-      <option value="http://mirrors.aliyun.com/ubuntu/" selected>阿里源</option>
-      <option value="http://mirrors.aliyuncs.com/ubuntu/">阿里源(阿里云服务器版)</option>
-      <option value="http://mirrors.163.com/ubuntu/">163源</option>
-      <option value="http://mirrors.sohu.com/ubuntu/">搜狐源</option>
-      <option value="http://mirrors.ustc.edu.cn/ubuntu/">中科大源</option>
-      <option value="http://mirrors.tuna.tsinghua.edu.cn/ubuntu/">清华源</option>
-      <option value="http://ftp.sjtu.edu.cn/ubuntu/">上交大源</option>
-      <option value="http://archive.ubuntu.com/ubuntu/">官方源</option></select
-    >&nbsp;&nbsp;&nbsp;&nbsp;
+      <option value="http://mirrors.aliyun.com/ubuntu" selected>阿里源</option>
+      <option value="http://mirrors.aliyuncs.com/ubuntu">阿里源(阿里云服务器版)</option>
+      <option value="http://mirrors.163.com/ubuntu">163源</option>
+      <option value="http://mirrors.sohu.com/ubuntu">搜狐源</option>
+      <option value="http://mirrors.ustc.edu.cn/ubuntu">中科大源</option>
+      <option value="http://mirrors.tuna.tsinghua.edu.cn/ubuntu">清华源</option>
+      <option value="http://ftp.sjtu.edu.cn/ubuntu">上交大源</option>
+      <option value="http://archive.ubuntu.com/ubuntu">官方源</option>
+    </select>
   </span>
-  <span style="display: inline-block">
+  <span style="display: inline-block; display: flex; margin: 8px">
+    <label>架构：</label>
+    <select name="sour" onchange="rep_arch(this.value)">
+      <option value="" selected>x86_64</option>
+      <option value="-ports">aarch64(ARM)</option>
+    </select>
+  </span>
+  <span style="display: inline-block; display: flex; margin: 8px">
     <label>版本：</label>
     <select name="ver" onchange="rep_ver(this.value)">
       <optgroup label="推荐">
-        <option value="focal">20.04(focal)</option>
+        <option value="jammy">22.04(jammy)</option>
+        <option value="focal" selected>20.04(focal)</option>
         <option value="bionic">18.04(bionic)</option>
-        <option value="xenial" selected>16.04(xenial)</option>
+        <option value="xenial">16.04(xenial)</option>
       </optgroup>
       <optgroup label="其他">
+        <option value="impish">21.10(impish)</option>
         <option value="hirsute">21.04(hirsute)</option>
         <option value="groovy">20.10(groovy)</option>
         <option value="eoan">19.10(eoan)</option>
@@ -42,26 +51,36 @@
   </span>
 </div>
 <code>
-  deb <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>xenial</ver> main restricted universe multiverse<br />
-  deb <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>xenial</ver>-security main restricted universe multiverse<br />
-  deb <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>xenial</ver>-updates main restricted universe multiverse<br />
-  deb <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>xenial</ver>-proposed main restricted universe multiverse<br />
-  deb <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>xenial</ver>-backports main restricted universe multiverse<br />
-  deb-src <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>xenial</ver> main restricted universe multiverse<br />
-  deb-src <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>xenial</ver>-security main restricted universe
+  deb <sour>http://mirrors.aliyun.com/ubuntu</sour><arch></arch>/ <ver>focal</ver> main restricted universe
   multiverse<br />
-  deb-src <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>xenial</ver>-updates main restricted universe
+  deb <sour>http://mirrors.aliyun.com/ubuntu</sour><arch></arch>/ <ver>focal</ver>-security main restricted universe
   multiverse<br />
-  deb-src <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>xenial</ver>-proposed main restricted universe
+  deb <sour>http://mirrors.aliyun.com/ubuntu</sour><arch></arch>/ <ver>focal</ver>-updates main restricted universe
   multiverse<br />
-  deb-src <sour>http://mirrors.aliyun.com/ubuntu/</sour> <ver>xenial</ver>-backports main restricted universe
+  deb <sour>http://mirrors.aliyun.com/ubuntu</sour><arch></arch>/ <ver>focal</ver>-proposed main restricted universe
   multiverse<br />
+  deb <sour>http://mirrors.aliyun.com/ubuntu</sour><arch></arch>/ <ver>focal</ver>-backports main restricted universe
+  multiverse<br />
+  deb-src <sour>http://mirrors.aliyun.com/ubuntu</sour><arch></arch>/ <ver>focal</ver> main restricted universe
+  multiverse<br />
+  deb-src <sour>http://mirrors.aliyun.com/ubuntu</sour><arch></arch>/ <ver>focal</ver>-security main restricted universe
+  multiverse<br />
+  deb-src <sour>http://mirrors.aliyun.com/ubuntu</sour><arch></arch>/ <ver>focal</ver>-updates main restricted universe
+  multiverse<br />
+  deb-src <sour>http://mirrors.aliyun.com/ubuntu</sour><arch></arch>/ <ver>focal</ver>-proposed main restricted universe
+  multiverse<br />
+  deb-src <sour>http://mirrors.aliyun.com/ubuntu</sour><arch></arch>/ <ver>focal</ver>-backports main restricted
+  universe multiverse<br />
 </code>
 
 <script>
   function rep_sour(what) {
     var s = document.getElementsByTagName('sour');
     for (i = 0; i < s.length; i++) s[i].innerHTML = what;
+  }
+  function rep_arch(what) {
+    var v = document.getElementsByTagName('arch');
+    for (i = 0; i < v.length; i++) v[i].innerHTML = what;
   }
   function rep_ver(what) {
     var v = document.getElementsByTagName('ver');
