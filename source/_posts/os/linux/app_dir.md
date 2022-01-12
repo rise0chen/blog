@@ -1,7 +1,7 @@
 ---
 title: Linux软件应该安装到哪个目录？
 date: 2016-01-29
-categories: [✮工具, Linux]
+categories: [⚝系统, Linux]
 ---
 
 Linux 的软件安装目录是也是有讲究的，理解这一点，在对系统管理是有益的。

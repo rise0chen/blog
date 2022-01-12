@@ -1,7 +1,7 @@
 ---
 title: Linux添加定时任务
 date: 2015-06-03
-categories: [✮工具, Linux]
+categories: [⚝系统, Linux]
 ---
 
 本文介绍如何使用 cron 实现定时任务。

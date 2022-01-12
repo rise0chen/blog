@@ -1,7 +1,7 @@
 ---
 title: 添加swap分区
 date: 2019-08-11
-categories: [✮工具, Linux]
+categories: [⚝系统, Linux]
 ---
 
 ## swap 分区介绍

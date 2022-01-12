@@ -1,7 +1,7 @@
 ---
 title: docker-compose
 date: 2018-06-26
-categories: [✮工具, Linux]
+categories: [⚝系统, 虚拟化]
 ---
 
 ## 安装 Docker-compose

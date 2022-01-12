@@ -1,7 +1,7 @@
 ---
 title: Ubuntu更新软件源
 date: 2021-02-22
-categories: [✮工具, Linux]
+categories: [⚝系统, Linux]
 ---
 
 ubuntu 下载软件慢的原因大部分是因为软件源地址是国外的，更新软件源，可以提升很大的下载速度。

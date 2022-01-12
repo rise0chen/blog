@@ -1,7 +1,7 @@
 ---
 title: docker常用指令
 date: 2018-06-14
-categories: [✮工具, Linux]
+categories: [⚝系统, 虚拟化]
 ---
 
 ## 安装 Docker

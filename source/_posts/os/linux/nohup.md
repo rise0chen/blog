@@ -1,7 +1,7 @@
 ---
 title: 后台运行Shell脚本
 date: 2015-06-25
-categories: [✮工具, Linux]
+categories: [⚝系统, Linux]
 ---
 
 ## 问题

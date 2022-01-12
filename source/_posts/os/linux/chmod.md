@@ -1,7 +1,7 @@
 ---
 title: Linux用户权限相关命令
 date: 2015-07-04
-categories: [✮工具, Linux]
+categories: [⚝系统, Linux]
 ---
 
 ```bash

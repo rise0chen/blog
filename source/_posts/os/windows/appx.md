@@ -1,7 +1,7 @@
 ---
 title: 卸载Win10自带小程序
 date: 2017-08-13
-categories: [✮工具, windows]
+categories: [⚝系统, Windows]
 ---
 
 新装 Win10 操作系统后，自带了很多小程序。

@@ -1,7 +1,7 @@
 ---
 title: ssh 内网穿透
 date: 2019-12-11
-categories: [✮工具, Linux]
+categories: [⚝系统, Linux]
 ---
 
 ## 配置

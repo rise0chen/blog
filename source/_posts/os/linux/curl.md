@@ -1,7 +1,7 @@
 ---
 title: curl命令
 date: 2015-12-25
-categories: [✮工具, Linux]
+categories: [⚝系统, Linux]
 ---
 
 curl 是一个利用 URL 规则在命令行下工作的文件传输工具。它支持文件的上传和下载，所以是综合传输工具，但按传统，习惯称 url 为下载工具。

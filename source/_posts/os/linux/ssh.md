@@ -1,7 +1,7 @@
 ---
 title: 使ssh支持中文
 date: 2017-07-23
-categories: [✮工具, Linux]
+categories: [⚝系统, Linux]
 ---
 
 开启中文显示需要 2 个条件。
