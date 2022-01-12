@@ -1,7 +1,7 @@
 ---
 title: hexo安装与使用
 date: 2017-07-11
-categories: [✮工具, Linux]
+categories: [✮工具, Blog]
 ---
 
 [hexo](https://hexo.io/zh-cn/docs/)是一个基于 nodejs 的快速、简洁且高效的博客框架。

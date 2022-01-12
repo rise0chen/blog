@@ -1,7 +1,7 @@
 ---
 title: Hexo代码高亮
 date: 2018-06-25
-categories: [✮工具, Linux]
+categories: [✮工具, Blog]
 ---
 
 使用三个反引号来包裹。  
