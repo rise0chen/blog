@@ -1,6 +1,6 @@
 ---
 title: 安装/卸载Node.js
-date: 2017-05-29
+date: 2022-02-23
 categories: [✬后端, NodeJS]
 ---
 
@@ -15,7 +15,7 @@ categories: [✬后端, NodeJS]
 #### 1.下载 Node.js 安装包
 
 ```bash
-VERSION=v10.15.0
+VERSION=v16.14.0
 DISTRO=linux-x64
 sudo wget https://nodejs.org/dist/$VERSION/node-$VERSION-$DISTRO.tar.xz #下载nodejs安装包
 ```
@@ -27,15 +27,18 @@ sudo tar xf node-$VERSION-$DISTRO.tar.xz -C /usr/local/lib  #解压缩
 sudo mv /usr/local/lib/node-$VERSION-$DISTRO /usr/local/lib/nodejs
 sudo ln -s /usr/local/lib/nodejs/bin/node /usr/local/bin/node #创建node的软连接
 sudo ln -s /usr/local/lib/nodejs/bin/npm /usr/local/bin/npm   #创建npm的软连接
+sudo ln -s /usr/local/lib/nodejs/bin/corepack /usr/local/bin/corepack   #创建corepack的软连接
+corepack enable   #使能yarn
 node -v    #查看当前安装的Node的版本
 ```
 
 #### 3.卸载
 
 ```bash
-sudo rm -r /usr/local/lib/nodejs  #删除软件目录
 sudo rm /usr/local/bin/node  #删除node的软连接
 sudo rm /usr/local/bin/npm   #删除npm的软连接
+sudo rm /usr/local/bin/corepack   #删除corepack的软连接
+sudo rm -r /usr/local/lib/nodejs  #删除软件目录
 ```
 
 ### 方法二、源码安装
