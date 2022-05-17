@@ -1,9 +1,12 @@
-<div style="display: flex;">
+<div style="display: flex">
   <span style="display: inline-block; display: flex; margin: 8px">
     <label>源：</label>
     <select name="sour" onchange="rep_sour(this.value)">
       <option value="http://mirrors.aliyun.com/ubuntu" selected>阿里源</option>
-      <option value="http://mirrors.aliyuncs.com/ubuntu">阿里源(阿里云服务器版)</option>
+      <option value="http://mirrors.aliyuncs.com/ubuntu">阿里源(内网版)</option>
+      <option value="http://mirrors.huaweicloud.com/ubuntu">华为源</option>
+      <option value="http://mirrors.tencent.com/ubuntu">腾讯源</option>
+      <option value="http://mirrors.tencentyun.com/ubuntu">腾讯源(内网版)</option>
       <option value="http://mirrors.163.com/ubuntu">163源</option>
       <option value="http://mirrors.sohu.com/ubuntu">搜狐源</option>
       <option value="http://mirrors.ustc.edu.cn/ubuntu">中科大源</option>
@@ -29,6 +32,7 @@
         <option value="xenial">16.04(xenial)</option>
       </optgroup>
       <optgroup label="其他">
+        <option value="kinetic">22.10(kinetic)</option>
         <option value="impish">21.10(impish)</option>
         <option value="hirsute">21.04(hirsute)</option>
         <option value="groovy">20.10(groovy)</option>
